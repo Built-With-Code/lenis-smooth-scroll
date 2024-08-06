@@ -1,8 +1,22 @@
+"use client";
+
 import InfoCard from "@/components/InfoCard";
 import { AllSectionData } from "@/utils/content-data";
 import Image from "next/image";
+import Lenis from "lenis";
+import { useEffect } from "react";
 
 export default function Home() {
+  // Default Lenis implementation
+  // useEffect(() => {
+  //   const lenis = new Lenis();
+  //   function raf(time: any) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
+  //   requestAnimationFrame(raf);
+  // }, []);
+
   return (
     <main className="min-h-screen bg-neutral-100 p-10">
       {/* Safari */}
